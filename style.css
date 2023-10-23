@@ -9,71 +9,267 @@
 
 body {
     justify-content: center;
-    background-image: url(https://images.unsplash.com/photo-1479150928156-423a69d91fe0?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background: linear-gradient(135deg, #1ae000d2, #B1DC04, #F4D74C, #FFD687); */
+    background-image: url(https://ingredient-generation-generated-ingredients.canva.com/14759b69-8556-49fa-837e-b1cc0cdd11f0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHQLRPZXQM%2F20231022%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231022T200749Z&X-Amz-Expires=153877&X-Amz-Signature=74dc9cc4e2e73465d6b0c322ddabcb201f82c1883e17b31b67a32589ba1b61fb&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2024%20Oct%202023%2014%3A52%3A26%20GMT);
     background-size: cover;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+/* mavbar */
+
 .navbar {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     top: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     backdrop-filter: blur(10px);
-}
-
-.navbar img {
-    max-width: 300px;
-}
-
-.navbar img:hover {
-    max-width: 300px;
-}
-
-main {
     display: flex;
-    height: 90vh;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.card {
+.navbar a {
     display: flex;
-    flex-direction: column;
-    max-width: 700px;
-    padding: 4rem 3rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    box-shadow: 5px 10px 50px rgb(0 0 0 / 10%);
-}
-
-.card span {
-    display: flex;
-    font-size: 0.8rem;
-    gap: 10px;
-    margin-top: 1rem;
+    align-items: center;
     text-decoration: none;
 }
 
-.card h1 {
-   margin-bottom: 1rem;
-   text-align: center;
+.navbar img {
+    max-width: 3rem;
 }
 
-button {
+.navbar button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
     border: none;
-    border-radius: 0.8rem;
-    margin-top: 1rem;
+    background: #096d05ff;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    transition: 100ms ease-in-out;
+}
+
+.ri-arrow-right-double-fill {
+    display: none;
+}
+
+.navbar-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.navbar-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-items a {
+    color: black;
+    font-size: 1rem;
+    transition: 100ms ease;
+}
+
+.navbar-items a:hover {
+    opacity: 0.5;
+}
+
+.ri-menu-2-line {
+    display: none;
+}
+
+/* main */
+
+.main-wrapper {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    margin: 1rem;
+    max-width: 70ch;
+    margin-left: 15%;
+}
+
+.info h1 {
+    font-size: 4rem;
+}
+
+.info button {
+    border: none;
     padding: 1rem;
-    background: #1ae000;
-    color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background: #096d05ff;
+}
+
+.info button:hover {
+    cursor: pointer;
+}
+
+/* main sign up page*/
+    .card-wrapper {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bxs-lemon {
+        font-size: 7rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        padding: 5rem 4rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        box-shadow: 10px 10px 50px rgb(0 0 0 / 5%);
+    }
+
+    .card span {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        gap: 10px;
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+
+    .card h1 {
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+
+    .card input[type="text"], .card input[type="text"]:focus {
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 0.5rem;
+        border: solid 1px #eee;
+        padding: 1rem;
+        outline: none; 
+        width: 100%;
+    }
+
+    .card span input[type="checkbox"] {
+        padding: 1rem;
+    }
+
+    .card span a {
+        text-decoration: none;
+    }
+
+    .card button {
+        border: none;
+        border-radius: 0.8rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        background: #096d05ff;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-shadow: rgba(0, 0, 0, 0.5) 1px 1px px;
+        width: 100%;
+        transition: 200ms ease-in-out;
+    }
+
+    .card button:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+/* footer */
+footer {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+footer img {
+    width: 2.5rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+footer h5, footer p {
+    font-size: 14px;
+    text-align: center;
+}
+
+footer h5 {
     font-weight: 500;
 }
 
-.card input {
-    border-radius: 0.5rem;
-    border: solid 1px #eee;
-    padding: 1rem;
+footer p {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+/* media queries */
+
+@media (max-width: 1500px) {
+    .navbar-items, .navbar .navbar-items-wrapper .logo, .navbar button span{
+        display: none;
+    }
+    .ri-menu-2-line {
+        display: block;
+    }
+
+    .ri-arrow-right-double-fill {
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-wrapper {
+        justify-content: center;
+    }
+    .info {
+        transform: scale(80%);
+        margin-left: 0;
+    }
+    .navbar-items-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-wrapper {
+        justify-content: center;
+    }
+    .info {
+        transform: scale(80%);
+        margin-left: 0;
+    }
+    .navbar-items-wrapper {
+        width: 90%;
+    }
+    .card {
+        padding: 1rem;
+    }
+    .card-items {
+        transform: scale(80%);
+    }
 }
