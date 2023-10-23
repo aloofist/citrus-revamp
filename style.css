@@ -41,7 +41,7 @@ button:hover {
     max-width: 3rem;
 }
 
-.navbar button {
+.navbar a button {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: none;
@@ -78,9 +78,26 @@ button:hover {
     opacity: 0.5;
 }
 
-.ri-menu-2-line {
+#hamburger {
     display: none;
 }
+
+.navbar button {
+    background: none;
+    border: none;
+}
+
+/* dropdown menu */
+
+/* [popover] {
+    inset: unset;
+    bottom: anchor(top);
+}
+
+#dropdown-menu {
+    background-color: aquamarine;
+    width: 100px;
+} */
 
 /* main */
 
@@ -232,7 +249,7 @@ footer p {
     .navbar-items, .navbar .navbar-items-wrapper .logo, .navbar button span{
         display: none;
     }
-    .ri-menu-2-line {
+    #hamburger {
         display: block;
     }
 
@@ -260,7 +277,7 @@ footer p {
         justify-content: center;
     }
     .info {
-        transform: scale(80%);
+        transform: scale(70%);
         margin-left: 0;
     }
     .navbar-items-wrapper {
@@ -270,6 +287,6 @@ footer p {
         padding: 1rem;
     }
     .card-items {
-        transform: scale(80%);
+        transform: scale(90%);
     }
 }
