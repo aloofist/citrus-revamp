@@ -10,7 +10,7 @@
 body {
     justify-content: center;
     /* background: linear-gradient(135deg, #1ae000d2, #B1DC04, #F4D74C, #FFD687); */
-    background-image: url(https://ingredient-generation-generated-ingredients.canva.com/14759b69-8556-49fa-837e-b1cc0cdd11f0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHQLRPZXQM%2F20231022%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231022T200749Z&X-Amz-Expires=153877&X-Amz-Signature=74dc9cc4e2e73465d6b0c322ddabcb201f82c1883e17b31b67a32589ba1b61fb&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2024%20Oct%202023%2014%3A52%3A26%20GMT);
+    background-image: url(background);
     background-size: cover;
 }
 
