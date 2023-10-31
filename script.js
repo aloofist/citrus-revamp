@@ -20,7 +20,7 @@ function checkInputs() {
     } else if (password.value.length < 8) {
         alert("Password needs to be at least 8 characters")
     } else if (!tosCheck.checked) {
-        alert("You haven't agreed to Terms of Service ad Privacy Policy")
+        alert("Agree to Terms of Service ad Privacy Policy")
     } else {
         link.href = "signed-up.html"
     }

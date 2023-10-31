@@ -24,7 +24,7 @@ button:hover {
     background: rgba(255, 255, 255, 0.8);
     top: 0;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.3rem;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@ button:hover {
 /* main */
 
 .main-wrapper {
-    height: 95vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -203,7 +203,7 @@ button:hover {
         text-shadow: rgba(0, 0, 0, 0.5) 1px 1px px;
         width: 100%;
         transition: 200ms ease-in-out;
-        opacity: 0.5;
+        opacity: 0.8;
     }
 
 /* footer */
