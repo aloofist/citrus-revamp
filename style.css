@@ -193,7 +193,7 @@ button:hover {
 
     .card button {
         border: none;
-        border-radius: 0.8rem;
+        border-radius: 0.5rem;
         margin-top: 1rem;
         padding: 1rem;
         background: #096d05ff;
@@ -203,12 +203,12 @@ button:hover {
         text-shadow: rgba(0, 0, 0, 0.5) 1px 1px px;
         width: 100%;
         transition: 200ms ease-in-out;
-    }
-
-    .card button:hover {
-        cursor: pointer;
         opacity: 0.5;
     }
+
+    /* .card button:hover {
+        cursor: pointer;
+    } */
 
 /* footer */
 footer {
