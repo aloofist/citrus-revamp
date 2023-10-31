@@ -13,7 +13,7 @@ const link = document.querySelector("#link")
 function checkInputs() {
     if (inputText.value === "") {
         alert("You didn't fill in anything!")
-    } else if (!email.value.includes("@")) {
+    } else if (!isValidEmail(email.value)) {
         alert("Invaild email address")
     } else if (password.value === "") {
         alert("Password is required")
@@ -23,18 +23,26 @@ function checkInputs() {
         alert("You haven't agreed to Terms of Service ad Privacy Policy")
     } else {
         link.href = "signed-up.html"
-        createButton.style.opacity = "1"
     }
 }
 
-// function check() {
-//     if (inputText.value !== "" && email.value.includes("@") && tosCheck.checked) {
-//         createButton.style.opacity = "1"
-//         console.log("aa")
-//     } else {
-//         createButton.style.opacity = "0.5"
-//     }
-// }
+function isValidEmail(email) {
+    // checks if there is at least character before and after the "@"", followed by "." and more character after it
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(email)
+}
+
+function check() {
+    if (inputText.value !== "" && isValidEmail(email.value) && password.value.length >= 8 && tosCheck.checked) {
+        createAcc.style.opacity = "1"
+        console.log("aa")
+    } else {
+        createAcc.style.opacity = "0.5"
+    }
+}
 
 createAcc.addEventListener("click", checkInputs)
-// input.addEventListener("input", check)
+input.addEventListener("input", check)
+email.addEventListener("input", check)
+password.addEventListener("input", check)
+tosCheck.addEventListener("change", check)
