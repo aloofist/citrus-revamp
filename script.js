@@ -8,7 +8,7 @@ const createAcc = document.querySelector(".card button")
 
 const link = document.querySelector("#link")
 
-
+// there is probably a easier way to write this but i dont care it works
 
 function checkInputs() {
     if (inputText.value === "") {
