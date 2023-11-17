@@ -1,5 +1,7 @@
 const input = document.querySelector("input")
 const inputText = document.querySelector("input[type='text']")
+
+const name = document.getElementById("name")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 
@@ -41,8 +43,14 @@ function check() {
     }
 }
 
+function setValue() {
+    localStorage.setItem("user", name.value)
+}
+
 createAcc.addEventListener("click", checkInputs)
+createAcc.addEventListener("click", setValue)
 input.addEventListener("input", check)
 email.addEventListener("input", check)
 password.addEventListener("input", check)
 tosCheck.addEventListener("change", check)
+
