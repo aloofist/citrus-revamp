@@ -14,8 +14,14 @@ body {
     background-size: cover;
 }
 
-button:hover {
-    cursor: pointer;
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
 }
 
 /* mavbar */
