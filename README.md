@@ -5,4 +5,4 @@ This is a revamp of a school project made in 2022 on a homework helping buisness
 
 <img src="https://i.imgur.com/jxquZq3.jpeg">
 <br>
-2022 Old: https://citrus.aloofist.repl.co/
+2022 old: https://citrus.aloofist.repl.co/
